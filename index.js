@@ -69,4 +69,4 @@ app.get("/callback", async (req, res) => {
 
 app.listen(PORT, () => console.log(`Express callback listening on port ${PORT}`));
 
-client.login('MTM5NDU1NTk1NDc5OTk2ODM5OA.Gy1dpa.agwrXehQN-vlGRctgT7tOue81B0pRuj_tc9Kzo');
+client.login(process.env.TOKEN);
