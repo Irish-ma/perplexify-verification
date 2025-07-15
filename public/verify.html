@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const user = params.get("user");
+      if (user) {
+        window.location.href = `https://your-bot-host.com/callback?user=${user}`;
+      } else {
+        document.body.innerHTML = "<h2>Missing user ID!</h2>";
+      }
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
