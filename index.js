@@ -15,9 +15,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // === ROLES ===
-const DEFAULT_ROLE = "UNVERIFIED_ROLE_ID";
-const VERIFIED_ROLE = "VERIFIED_ROLE_ID";
-const GUILD_ID = "YOUR_GUILD_ID";
+const DEFAULT_ROLE = "1394733004680593409";
+const VERIFIED_ROLE = "1393008654999093380";
+const GUILD_ID = "1393008576804687942";
 
 // === When user joins, give them unverified role ===
 client.on(Events.GuildMemberAdd, member => {
@@ -69,4 +69,4 @@ app.get("/callback", async (req, res) => {
 
 app.listen(PORT, () => console.log(`Express callback listening on port ${PORT}`));
 
-client.login(process.env.TOKEN);
+client.login('MTM5NDU1NTk1NDc5OTk2ODM5OA.Gy1dpa.agwrXehQN-vlGRctgT7tOue81B0pRuj_tc9Kzo');
